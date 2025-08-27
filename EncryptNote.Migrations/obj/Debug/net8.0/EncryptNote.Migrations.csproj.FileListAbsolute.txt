@@ -1,0 +1,17 @@
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Migrations.deps.json
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Migrations.runtimeconfig.json
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Migrations.dll
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Migrations.pdb
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Library.dll
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\bin\Debug\net8.0\EncryptNote.Library.pdb
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.csproj.AssemblyReference.cache
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.GeneratedMSBuildEditorConfig.editorconfig
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.AssemblyInfoInputs.cache
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.AssemblyInfo.cs
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.csproj.CoreCompileInputs.cache
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptN.2596D195.Up2Date
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.dll
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\refint\EncryptNote.Migrations.dll
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.pdb
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\EncryptNote.Migrations.genruntimeconfig.cache
+E:\Avalonia\EncryptNote\EncryptNote.Migrations\obj\Debug\net8.0\ref\EncryptNote.Migrations.dll

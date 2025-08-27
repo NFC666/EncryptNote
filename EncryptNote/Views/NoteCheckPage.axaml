@@ -1,0 +1,91 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EncryptNote.Views.NoteCheckPage"
+        xmlns:vm="clr-namespace:EncryptNote.ViewModels"
+        x:DataType="vm:NoteCheckPageViewModel"
+        ExtendClientAreaToDecorationsHint="True"
+
+        Background="{DynamicResource Background}"
+        Title="NoteCheckPage">
+    <Grid RowDefinitions="30*,70*">
+        <Border
+            x:Name="TopImage"
+            Grid.Row="0"
+            Background="{DynamicResource Primary}" />
+        <Grid
+            ColumnDefinitions="10*,80*,10*"
+            Grid.Row="1">
+            <Border
+                Grid.Column="1"
+                Background="{DynamicResource BackgroundDark}">
+                <Grid ColumnDefinitions="80*,20*">
+                    <StackPanel Grid.Column="0" Margin="10" Spacing="5">
+                        <TextBlock
+                            Text="{Binding NoteToShow.Title}"
+                            FontSize="30" />
+                        <Border
+                            BorderBrush="{DynamicResource Divider}"
+                            BorderThickness="0,0,0,1" />
+                        <TextBlock
+                            Text="{Binding NoteToShow.CreatedDate}"
+                            FontSize="12" Foreground="Gray" />
+                        <TextBlock
+                            Text="{Binding NoteToShow.Content}"
+                            FontSize="20" />
+                    </StackPanel>
+                    <StackPanel
+                        Grid.Column="1">
+                        <ItemsControl
+                            ItemsSource="{Binding NoteToShow.FileNameList}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border 
+                                        Margin="10"
+                                        CornerRadius="10"
+                                        Background="{DynamicResource BackgroundLight}">
+                                        <Grid 
+                                            Margin="10"
+                                            RowDefinitions="*,Auto">
+                                            <DockPanel
+                                                
+                                                Grid.Row="0"
+                                                LastChildFill="False">
+                                                <TextBlock
+                                                    
+                                                    Text="{Binding}"
+                                                     />
+                                                <Image 
+                                                    DockPanel.Dock="Right"
+                                                    Width="40"
+                                                    Height="40"
+                                                    Source="../Assets/images/file-document-outline.png"/>
+                                                
+                                            </DockPanel>
+                                            <StackPanel
+                                                Spacing="5"
+                                                Grid.Row="1">
+                                                <Border 
+                                                    BorderThickness="0,1,0,0"
+                                                    BorderBrush="{DynamicResource Divider}"/>
+                                                <TextBlock 
+                                                    FontSize="12"
+                                                    Foreground="Gray"
+                                                    Text="{Binding $parent[ItemsControl].((vm:NoteCheckPageViewModel)DataContext).NoteToShow.CreatedDate}"
+                                                    />
+                                                    
+                                                    
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

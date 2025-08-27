@@ -1,0 +1,37 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:EncryptNote.Views.Components"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Width="100"
+             Height="100"
+             x:Class="EncryptNote.Views.Components.NoteCard">
+    <Border
+        
+        CornerRadius="5"
+        >
+        <StackPanel Grid.Column="0" Spacing="5">
+            <TextBlock
+                Text="{Binding Note.Title, RelativeSource={RelativeSource AncestorType=local:NoteCard}}"
+                TextWrapping="Wrap"
+                FontSize="25"
+                FontWeight="Bold" />
+            <Border
+                BorderThickness="0,0,0,1"
+                BorderBrush="{DynamicResource Divider}" />
+            <TextBlock
+                Text="{Binding Note.CreatedDate, RelativeSource={RelativeSource AncestorType=local:NoteCard}}"
+                Foreground="Gray"
+                TextWrapping="Wrap"
+                FontSize="10"
+                FontWeight="Light" />
+            <TextBlock
+                Text="{Binding Note.SimpleContent, RelativeSource={RelativeSource AncestorType=local:NoteCard}}"
+                TextWrapping="Wrap"
+                FontSize="18"
+                FontWeight="Light" />
+
+        </StackPanel>
+    </Border>
+</UserControl>

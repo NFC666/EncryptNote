@@ -1,0 +1,11 @@
+E:\Avalonia\EncryptNote\EncryptNote.Library\bin\Debug\net8.0\EncryptNote.Library.deps.json
+E:\Avalonia\EncryptNote\EncryptNote.Library\bin\Debug\net8.0\EncryptNote.Library.dll
+E:\Avalonia\EncryptNote\EncryptNote.Library\bin\Debug\net8.0\EncryptNote.Library.pdb
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.GeneratedMSBuildEditorConfig.editorconfig
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.AssemblyInfoInputs.cache
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.AssemblyInfo.cs
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.csproj.CoreCompileInputs.cache
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.dll
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\refint\EncryptNote.Library.dll
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\EncryptNote.Library.pdb
+E:\Avalonia\EncryptNote\EncryptNote.Library\obj\Debug\net8.0\ref\EncryptNote.Library.dll

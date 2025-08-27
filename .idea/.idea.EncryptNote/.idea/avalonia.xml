@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="EncryptNote/App.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Assets/Colors.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Assets/Font.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Assets/String.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Views/Components/NoteCard.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Views/MainWindow.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Views/NoteCheckPage.axaml" value="EncryptNote/EncryptNote.csproj" />
+        <entry key="EncryptNote/Views/NoteHomePage.axaml" value="EncryptNote/EncryptNote.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

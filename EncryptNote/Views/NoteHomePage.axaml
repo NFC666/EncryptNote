@@ -1,0 +1,157 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EncryptNote.Views.NoteHomePage"
+        Title="NoteHomePage"
+        ExtendClientAreaToDecorationsHint="True"
+        Padding="0,20,0,0"
+        Background="{DynamicResource BackgroundDark}"
+        Icon="/Assets/avalonia-logo.ico"
+        xmlns:i="clr-namespace:Avalonia.Xaml.Interactions;assembly=Xaml.Behaviors.Interactions"
+        xmlns:comp="clr-namespace:EncryptNote.Views.Components"
+        xmlns:vm="clr-namespace:EncryptNote.ViewModels"
+        
+        x:DataType="vm:NoteHomePageViewModel">
+    <Grid Margin="10">
+        <Grid ColumnDefinitions="30*,70*">
+            <Border
+                Padding="5"
+                Grid.Column="0"
+                Background="{DynamicResource BackgroundLight}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <TextBlock
+                            Text="{DynamicResource Filter}" FontSize="20" />
+                        <Border
+                            BorderBrush="{DynamicResource Divider}"
+                            BorderThickness="0,0,0,1" />
+                        <Grid
+                            Margin="10,10"
+                            RowDefinitions="30*,70*"
+                            ColumnDefinitions="Auto,Auto"
+                            RowSpacing="10">
+                            <TextBlock
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Text="起始时间"
+                                VerticalAlignment="Center" />
+                            <CalendarDatePicker
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="10,0"
+                                Foreground="{DynamicResource Text}"
+                                Background="{DynamicResource BackgroundDark}" />
+
+
+                            <TextBlock
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Text="结束时间"
+                                VerticalAlignment="Center" />
+
+                            <CalendarDatePicker
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="10,0"
+                                Foreground="{DynamicResource Text}"
+                                Background="{DynamicResource BackgroundDark}" />
+                        </Grid>
+                        <ItemsControl ItemsSource="{Binding SearchItems}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Margin="10">
+                                        <TextBlock Text="关键词" />
+                                        <TextBox Text="{Binding .}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        <Button
+                            Foreground="{DynamicResource Primary}"
+                            Margin="10"
+                            Content="添加关键字"
+                            HorizontalAlignment="Stretch" />
+                        <Button
+                            Foreground="{DynamicResource Primary}"
+                            Margin="10"
+                            Content="搜索"
+                            HorizontalAlignment="Stretch" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+            <Grid
+                Grid.Column="1"
+                RowDefinitions="Auto,*">
+
+                <DockPanel Grid.Row="0"
+                           Margin="10"
+                           LastChildFill="False">
+                    <Button
+                        DockPanel.Dock="Right"
+                        Foreground="{DynamicResource Primary}"
+                        Content="添加笔记"
+                        HorizontalAlignment="Stretch" />
+                    <TextBlock
+                        FontSize="25"
+                        DockPanel.Dock="Left"
+                        Text="笔记列表" />
+
+                </DockPanel>
+                <ItemsControl
+
+                    Grid.Row="1"
+                    ItemsSource="{Binding Notes}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid
+                                Margin="10"
+                                RowDefinitions="*,Auto"
+                                Background="{DynamicResource BackgroundLight}">
+
+                                <comp:NoteCard
+                                    Padding="5"
+                                    Grid.Row="0"
+                                    Width="200"
+                                    Height="200"
+                                    Note="{Binding .}" />
+                                <DockPanel
+                                    
+                                    Background="{DynamicResource BackgroundLight}"
+                                    Grid.Row="1"
+                                    Height="40"
+                                    LastChildFill="False">
+                                    <Button
+                                        DockPanel.Dock="Right"
+                                        Content="删除"
+                                        Theme="{DynamicResource OutlineButton}"
+                                        Foreground="{DynamicResource Error}" />
+                                    <Button
+                                        Margin="5,0"
+                                        DockPanel.Dock="Right"
+                                        Command="{Binding $parent[Window].((vm:NoteHomePageViewModel)DataContext).OpenNoteCommand}"
+                                        CommandParameter="{Binding .}"
+                                        Content="查看"
+                                        Foreground="{DynamicResource Primary}"
+                                        Background="{DynamicResource Primary}"
+                                        Theme="{DynamicResource OutlineButton}" />
+                                    <Button
+                                        DockPanel.Dock="Right"
+                                        Content="编辑"
+                                        Theme="{DynamicResource OutlineButton}"
+                                        Foreground="{DynamicResource Primary}" />
+                                </DockPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

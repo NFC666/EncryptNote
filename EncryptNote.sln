@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptNote", "EncryptNote\EncryptNote.csproj", "{8C8FF218-04A5-4C0A-9D75-FF2E91618025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptNote.Library", "EncryptNote.Library\EncryptNote.Library.csproj", "{1F92EBAC-577B-41C8-8057-57FE63EA69A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptNote.UnitTest", "EncryptNote.UnitTest\EncryptNote.UnitTest.csproj", "{2AF10E27-1324-41F6-AA3C-4D9949B3F3DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptNote.Migrations", "EncryptNote.Migrations\EncryptNote.Migrations.csproj", "{3C616AE1-7935-4C7D-B9A3-F3604C6E4ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptNote.Services", "EncryptNote.Services\EncryptNote.Services.csproj", "{F21B6A2E-49FD-49AD-9B9E-92D1A23907BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C8FF218-04A5-4C0A-9D75-FF2E91618025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C8FF218-04A5-4C0A-9D75-FF2E91618025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C8FF218-04A5-4C0A-9D75-FF2E91618025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C8FF218-04A5-4C0A-9D75-FF2E91618025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F92EBAC-577B-41C8-8057-57FE63EA69A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F92EBAC-577B-41C8-8057-57FE63EA69A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F92EBAC-577B-41C8-8057-57FE63EA69A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F92EBAC-577B-41C8-8057-57FE63EA69A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF10E27-1324-41F6-AA3C-4D9949B3F3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF10E27-1324-41F6-AA3C-4D9949B3F3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF10E27-1324-41F6-AA3C-4D9949B3F3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF10E27-1324-41F6-AA3C-4D9949B3F3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C616AE1-7935-4C7D-B9A3-F3604C6E4ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C616AE1-7935-4C7D-B9A3-F3604C6E4ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C616AE1-7935-4C7D-B9A3-F3604C6E4ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C616AE1-7935-4C7D-B9A3-F3604C6E4ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21B6A2E-49FD-49AD-9B9E-92D1A23907BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21B6A2E-49FD-49AD-9B9E-92D1A23907BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21B6A2E-49FD-49AD-9B9E-92D1A23907BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21B6A2E-49FD-49AD-9B9E-92D1A23907BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

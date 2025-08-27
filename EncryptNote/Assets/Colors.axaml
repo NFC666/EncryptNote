@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="Primary">#BFA5D2</Color> <!-- 较亮的紫色 -->
+    <Color x:Key="PrimaryDark">#9974AA</Color> <!-- 主色 -->
+    <Color x:Key="PrimaryLight">#D8C6E5</Color> <!-- 更亮的主色 -->
+
+    <Color x:Key="Accent">#FF79B0</Color> <!-- 鲜艳但适合暗色背景的粉红色 -->
+
+    <Color x:Key="Text">#E0E0E0</Color> <!-- 明亮文字 -->
+    <Color x:Key="TextInverted">#121212</Color> <!-- 暗背景下的深色文字（用于亮背景） -->
+
+    <Color x:Key="Background">#121212</Color> <!-- 主背景：暗黑 -->
+    <Color x:Key="BackgroundDark">#1E1E1E</Color> <!-- 稍亮一点的背景 -->
+    <Color x:Key="BackgroundLight">#2C2C2C</Color> <!-- 比较亮的暗背景 -->
+
+    <Color x:Key="Divider">#444444</Color> <!-- 分割线：中灰色 -->
+    <Color x:Key="Disabled">#555555</Color> <!-- 禁用状态：暗灰色 -->
+     <Color x:Key="Error">#FF5555</Color><!-- 禁用状态：错误 -->
+</ResourceDictionary>
